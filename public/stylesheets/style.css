@@ -1,0 +1,78 @@
+body {
+  padding: 60px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#crafty{
+  color: #814540;
+}
+
+#friendly{
+  color: #D97F54;
+}
+
+#beer{
+  color: #FFA939;
+}
+
+#finder{
+  color: #38302E;
+}
+
+.containerBackground{
+  width: 100%;
+  height: 52px;
+  background: #FFEB20;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.footerBackground{
+  width: 100%;
+  height: 50px;
+  background: #FFEB20;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.headerContainer{
+  position: absolute;
+  top: -5px;
+}
+
+.indexLayout{
+  margin-top: 50px;
+}
+
+.login{
+  padding: 30px 0px 50px 50px;
+  text-align: left;
+}
+
+.signup{
+  padding: 50px 0px 50px 50px;
+  text-align: left;
+}
+
+.indexUserPages{
+  margin-top: 50px;
+}
+
+.profileContainer{
+
+}
+
+.feedContainer{
+  background: #FFEB20;
+  height: auto;
+  opacity: 0.5;
+  border-radius: 5px;
+}
