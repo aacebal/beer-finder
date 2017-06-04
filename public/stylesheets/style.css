@@ -7,28 +7,44 @@ a {
   color: #00B7FF;
 }
 
+label{
+  display: inline;
+}
+
 #crafty{
-  color: #814540;
+  color: #8D4E34;
 }
 
 #friendly{
-  color: #D97F54;
+  color: rgba(203, 119, 79, 0.5);
 }
 
 #beer{
-  color: #FFA939;
+  color: #F8A337;
 }
 
 #finder{
-  color: #38302E;
+  color: #352E2C;
 }
+
+#profilePic{
+  width: 95px;
+  height: 95px;
+  border-radius: 4px;
+  float: left;
+  padding-right: 2px;
+}
+
+#post-pic-path{
+  display: none;
+}
+
 
 .containerBackground{
   width: 100%;
   height: 52px;
-  background: #FFEB20;
-  opacity: 0.5;
-  position: absolute;
+  background: rgba(235, 216, 30, 0.5);
+  position: fixed;
   left: 0;
   top: 0;
 }
@@ -36,16 +52,16 @@ a {
 .footerBackground{
   width: 100%;
   height: 50px;
-  background: #FFEB20;
-  opacity: 0.5;
-  position: absolute;
+  background: rgba(235, 216, 30, 0.5);
+  position: fixed;
   left: 0;
   bottom: 0;
 }
 
 .headerContainer{
-  position: absolute;
+  position: fixed;
   top: -5px;
+  left: 45px;
 }
 
 .indexLayout{
@@ -66,13 +82,95 @@ a {
   margin-top: 50px;
 }
 
-.profileContainer{
+.leftPannel{
+  float: left;
+  position: fixed;
+}
 
+.searchBar{
+  margin-top: 25px;
+}
+
+.searchBar>input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.profileContainer{
+  background: #7C423D;
+  opacity: 0.5;
+  clear: both;
+  padding: 1px 0px 10px 30px;
+  border-radius: 5px;
+  margin-top: 25px;
+  height: 140px;
+  margin-top: 5px;
+  overflow: scroll;
+}
+
+.profileInfo{
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+}
+
+
+.eventsContainer{
+  background-color: rgba(203, 119, 79, 0.5);
+  clear: both;
+  padding: 1px 0px 10px 30px;
+  border-radius: 5px;
+  margin-top: 25px;
+  height: 140px;
+  overflow: scroll;
+}
+
+.eventsInfo{
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+}
+
+.tradesContainer{
+  background: #F8A337;
+  opacity: 0.5;
+  clear: both;
+  padding: 1px 0px 10px 30px;
+  border-radius: 5px;
+  margin-top: 25px;
+  height: 140px;
+  overflow: scroll;
+}
+
+.tradesInfo{
+  padding: 5px;
+  font-size: 16px;
+  color: black;
 }
 
 .feedContainer{
-  background: #FFEB20;
+  background: rgba(235, 216, 30, 0.5);
   height: auto;
-  opacity: 0.5;
   border-radius: 5px;
+  padding-left: 50px;
+  float: right;
+  position: static;
+  margin-top: 25px;
+}
+
+.feedInfo{
+  color: black;
+}
+
+.styledButton{
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  clear: both;
+  margin-left: 12px
 }

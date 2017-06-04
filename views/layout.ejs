@@ -12,14 +12,19 @@
   </head>
   <nav>
     <div class="containerBackground"></div>
-      <header class="container headerContainer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h1><span id="crafty">crafty </span><span id="friendly">friendly </span><span id="beer">beer </span> <span id="finder">finder</span></h1>
+      <header class="container headerContainer">
+          <div class="title logout col-lg-9 logout col-md-9 logout col-sm-9 logout col-xs-9">
+              <h1 style="float:left"><span id="crafty">crafty </span><span id="friendly">friendly </span><span id="beer">beer </span> <span id="finder">finder</span></h1>
+          </div>
+          <div class="logout col-lg-3 logout col-md-3 logout col-sm-3 logout col-xs-3">
+            <a href="/logout"><h1 style="float:right" id="crafty">log out</h1></a>
+          </div>
       </header>
   </nav>
   <body>
     <%- body %>
   </body>
-
-    <div class="footerBackground"></div>
-    <footer></footer>
+    <footer>
+        <div class="footerBackground"></div>
+    </footer>
 </html>

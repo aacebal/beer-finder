@@ -52,7 +52,12 @@ else if (true) {
           next(err);
           return;
         }
+        req.login(theUser, function(err) {
+        if (err) {
+          console.log(err);
+        }
         res.redirect('/main');
+        });
       });
     });
   }
