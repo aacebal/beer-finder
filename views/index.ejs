@@ -1,10 +1,17 @@
-<div class="container indexLayout col-lg-6 col-lg-6 col-sm-6 col-xs-6">
-  <p>nothing</p>
+<style media="screen">
+  body {background-image: url('/images/index-background.jpg');
+  background-size: 111.5%;
+  background-repeat: no-repeat;
+  background-position: 0px 54px;}
+</style>
+
+<div class="indexLayout col-lg-6 col-lg-6 col-sm-6 col-xs-6">
 </div>
 
-<div class="container indexUserPages col-lg-6 col-lg-6 col-sm-6 col-xs-6">
+
+<div class="container indexUserPages col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
   <div class="login">
-    <h2 id="crafty">have an account? log in</h2>
+    <h2 id="finder">have an account? log in</h2>
     <form action="/login" method="post">
     <label id="beer" for="username-input">username</label>
     <input id="username-input" type="text" name="loginUsername">
@@ -16,15 +23,15 @@
     </form>
   </div>
   <div class="signup">
-    <h2 id="friendly">new user? sign up</h2>
+    <h2 id="finder">new user? sign up</h2>
     <form action="/signup" method="post">
-      <label id="crafty" for="name-input">full name</label>
+      <label id="beer" for="name-input">full name</label>
       <input id="name-input" type="text" name="nameInput">
       <br>
-      <label id="friendly" for="username-input">username</label>
+      <label id="finder" for="username-input">username</label>
       <input id="username-input" type="text" name="usernameInput">
       <br>
-      <label id="beer" for="email-input">email <span style="color: white">___.</span></label>
+      <label id="beer" for="email-input">email <span style="color: rgba(203, 119, 79, 0.01)">___.</span></label>
       <input id="email-input" type="email" name="emailInput">
       <br>
       <label id="finder" for="password-input">password</label>

@@ -1,4 +1,4 @@
-const express = require('express');
+const express        = require('express');
 
 const bcrypt         = require("bcrypt");
 const bcryptSalt     = 10;
@@ -12,6 +12,7 @@ const myUploader = multer({ dest: path.join(__dirname, '../public/images')
 });
 
 const router  = express.Router();
+
 
 router.get('/main', ensure.ensureLoggedIn(), (req, res, next) => {
   res.render('main.ejs', {

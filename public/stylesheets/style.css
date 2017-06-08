@@ -16,7 +16,7 @@ label{
 }
 
 #friendly{
-  color: rgba(203, 119, 79, 0.5);
+  color: rgb(203, 119, 79);
 }
 
 #beer{
@@ -30,9 +30,9 @@ label{
 #profilePic{
   width: 95px;
   height: 95px;
-  border-radius: 4px;
+  border-radius: 50%;
   float: left;
-  padding-right: 2px;
+  padding: 2px;
 }
 
 #post-pic-path{
@@ -65,21 +65,27 @@ label{
 }
 
 .indexLayout{
-  margin-top: 50px;
+  margin-top: 75px;
+  height: 450px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.indexUserPages{
+  margin-top: 75px;
+  background-color: rgba(245, 236, 136, 0.9);
+  border-radius: 5px;
+  border: white 2px solid;
 }
 
 .login{
-  padding: 30px 0px 50px 50px;
+  padding: 10px 0px 30px 10px;
   text-align: left;
 }
 
 .signup{
-  padding: 50px 0px 50px 50px;
+  padding: 10px 0px 30px 10px;
   text-align: left;
-}
-
-.indexUserPages{
-  margin-top: 50px;
 }
 
 .leftPannel{
@@ -102,8 +108,7 @@ label{
 }
 
 .profileContainer{
-  background: #7C423D;
-  opacity: 0.5;
+  background: rgba(124, 66, 61, 0.5);
   clear: both;
   padding: 1px 0px 10px 30px;
   border-radius: 5px;
@@ -137,8 +142,7 @@ label{
 }
 
 .tradesContainer{
-  background: #F8A337;
-  opacity: 0.5;
+  background: rgba(248, 163, 55, 0.5);
   clear: both;
   padding: 1px 0px 10px 30px;
   border-radius: 5px;

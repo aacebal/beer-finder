@@ -1,84 +1,13 @@
-<div class="leftPannel col-lg-4 col-md-4 col-sm-4 col-xs-4">
-
-<div class="searchBar">
-  <input type="text" name="beerFinder" value="" placeholder="search beers">
-</div>
-
-<div class="profileContainer">
-  <div class="profileInfo">
-    <% if(user.profilePic === undefined ) { %>
-      <div class="profilePic">
-        <form action="/main/profile-pic/<%= user.id %>" method="post" enctype="multipart/form-data">
-          <label for="post-pic-path"><img id="profilePic" src="/images/empty-profile.png"></label>
-          <span><%= user.name %></span><br>
-          <input id="post-pic-path" type="file" name="postPicPath">
-          <br>
-          <button class="styledButton">Upload</button>
-        </form>
-      </div>
-    <% } else { %>
-      <div class="profilePic">
-        <form action="/main/profile-pic/<%= user.id %>" method="post" enctype="multipart/form-data">
-          <label for="post-pic-path"><img id="profilePic" src="<%= user.profilePic %>"></label>
-          <span><%= user.name %></span><br>
-          <input id="post-pic-path" type="file" name="postPicPath">
-          <br>
-          <button class="styledButton">Upload</button>
-        </form>
-      </div>
-    <% } %>
+<div class="characters-container">
+<style media="screen">
+  .characters-container{
+    height: 200px;
+    background-color: grey;
+  }
+</style>
+  <div class=".character-info">
 
   </div>
 </div>
 
-
-<div class="eventsContainer">
-  <div class="eventsInfo">
-    <p><%= user.name %></p>
-  </div>
-</div>
-
-
-<div class="tradesContainer">
-  <div class="tradesInfo">
-    <p><%= user.name %></p>
-  </div>
-</div>
-
-</div>
-
-<div class="feedContainer col-lg-7 col-md-7 col-sm-7 col-xs-7">
-  <div class="feedInfo">
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-    <br>
-    <h2>this is your feed</h2>
-  </div>
-</div>
+<button id="fetch-all">Fetch all</button>
